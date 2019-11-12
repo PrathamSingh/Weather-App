@@ -1,0 +1,248 @@
+body {
+  margin: 0px;
+  height: 100vh;
+  background-image: url('./sky.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#root {
+  padding-top: 20px;
+}
+
+.locationSearchBar{
+  text-align: center;
+  cursor: pointer;
+}
+
+.location-search-container{
+  display: inline-block;
+  position: relative;
+  text-align: left;
+  width: 50%;
+}
+
+.locationSearchBar input[type=text] {
+  cursor: pointer;
+  border: 0px;
+  font-size: 16px;
+  background-color: transparent;
+  padding: 9px 10px;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  color: #fff;
+  width: 100%;
+  cursor: text;
+}
+.locationSearchBar input[type=text]::-webkit-input-placeholder { /* Edge */
+  color: #fff;
+}
+
+.searchList {
+  margin-top: 2px;
+  position: absolute;
+  padding: 0px;
+  list-style: none;
+  background-color: #fff;
+  z-index: 22;
+  border-radius: 5px;
+  width: 100%;
+  
+}
+
+.options {
+  border-bottom: 1px solid black;
+  border-radius: 5px;
+  padding: 10px 30px;
+  max-width: 100%;
+  overflow: auto;
+}
+.options:hover{
+  background-color: #00b7ff;
+  color: #fff;
+}
+
+.switchContainer input{
+  display: none;
+}
+
+.slider {
+  width: 70px;
+  height: 36px;
+  border-radius: 34px;
+  background-color: black;
+  transition: background-color 0.4s;
+  cursor: pointer;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 34px;
+  position: relative;
+  top: 8%;
+  left: 4%;
+  background-color: #57BB00;
+}
+
+input[type="checkbox"].switch:checked + .slider > .circle {
+	-webkit-transform: translate3d(35px, 0, 0);
+	transform: translate3d(35px, 0, 0);
+}
+
+.unitConverter {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  float: right;
+  padding-right: 115px;
+  padding-top: 10px;
+}
+
+.tempUnit{
+  font-size: 1.5em;
+  margin: 0px;
+  padding: 0 10px;
+}
+
+.Container {
+  padding: 80px 100px;
+  color: whitesmoke;
+}
+
+.weatherTitle {
+  font-size: 1.3em;
+  color: #2c2e2f;
+}
+
+.icon {
+  display: inline-block;
+}
+
+.icon img {
+  width: 200px;
+  margin: -10px -10px -70px -40px;
+}
+
+.temp {
+  
+  text-align: center;
+  display: inline-block;
+  vertical-align: baseline;
+  width: 200px;
+  color: #fff;
+}
+
+.temp h1 {
+  font-size: 3em;
+  margin: 0px;
+  padding: 0px;
+}
+
+.cloudiness {
+  font-size: 1.5em;
+}
+
+.info-section{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.leftBlock{
+  width: 60%;
+  font-family: 'Fira Sans', sans-serif;
+  color: rgb(77, 69, 69);
+}
+
+.right-section {
+  width: 40%;
+  font-family: 'Fira Sans', sans-serif;
+  color: rgb(77, 69, 69);
+  font-size: 0.9em;
+}
+
+.otherWeatherData h1{
+  margin-bottom: 3px;
+  padding: 0px;
+}
+
+.otherWeatherData h2{
+  margin-bottom: 1px;
+  padding: 0px;
+  margin-top: 0px ;
+}
+
+.windSpeed{
+  padding-left: 10px;
+  border-bottom: 2px solid #c4c0c0; 
+  padding-right: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+.windSpeed h1{
+  display: inline-block;
+}
+
+.windSpeed img{
+  padding-left: 20px;
+  vertical-align: bottom;
+}
+
+.weatherInfoContainer{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.right_block{
+  width: 50%;
+  padding-right: 10px;
+}
+
+.left_block {
+  padding-left: 10px;
+}
+
+.setRise{
+  display: flex;
+  justify-content: space-between;
+}
+
+.lds-hourglass {
+  display: block;
+  width: 64px;
+  height: 64px;
+  padding: 200px 0px;
+  margin: auto;
+}
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 6px;
+  box-sizing: border-box;
+  border: 26px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
