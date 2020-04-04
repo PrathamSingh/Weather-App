@@ -1,2 +1,3 @@
-export const WeatherAPI = "9b32cf97b04c03ad2e6f0960ea7bdce3";
-export const LocationSearchAPI = "pk.eyJ1IjoidXNkYXJqaSIsImEiOiJjanhvbnNqY2QwODczM21ybnJybGUzM3l0In0.hUTTdbflff_BO_c7S3MldQ";
+export const WeatherAPI = 'a2e51d57ee30812be414b4cc4364932b';
+export const LocationSearchAPI =
+  'pk.eyJ1IjoicHJhdGhhbXNpbmdoMDEiLCJhIjoiY2s4anp3bThiMGlsMDNmbnd1a2ZqNXJkdiJ9.-RYR1P8euCTwUWPf0jzcxw';
