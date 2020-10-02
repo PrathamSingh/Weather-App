@@ -1,28 +1,33 @@
 body {
   margin: 0px;
   height: 100vh;
-  background-image: url('./sky.png');
+  /* background-image: url('./sky.png'); */
+  background-image: linear-gradient(
+    rgba(205, 130, 255, 0.5),
+    rgba(57, 0, 80, 0.5)
+  );
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 #root {
   padding-top: 20px;
 }
 
-.locationSearchBar{
+.locationSearchBar {
   text-align: center;
   cursor: pointer;
 }
 
-.location-search-container{
+.location-search-container {
   display: inline-block;
   position: relative;
   text-align: left;
   width: 50%;
 }
 
-.locationSearchBar input[type=text] {
+.locationSearchBar input[type="text"] {
   cursor: pointer;
   border: 0px;
   font-size: 16px;
@@ -34,7 +39,8 @@ body {
   width: 100%;
   cursor: text;
 }
-.locationSearchBar input[type=text]::-webkit-input-placeholder { /* Edge */
+.locationSearchBar input[type="text"]::-webkit-input-placeholder {
+  /* Edge */
   color: #fff;
 }
 
@@ -47,7 +53,6 @@ body {
   z-index: 22;
   border-radius: 5px;
   width: 100%;
-  
 }
 
 .options {
@@ -57,13 +62,14 @@ body {
   max-width: 100%;
   overflow: auto;
 }
-.options:hover{
+.options:hover {
   background-color: #00b7ff;
   color: #fff;
 }
 
-.switchContainer input{
+.switchContainer input {
   display: none;
+  transition: 0.5s;
 }
 
 .slider {
@@ -82,12 +88,14 @@ body {
   position: relative;
   top: 8%;
   left: 4%;
-  background-color: #57BB00;
+  background-color: #57bb00;
+  transition: 0.5s;
 }
 
 input[type="checkbox"].switch:checked + .slider > .circle {
-	-webkit-transform: translate3d(35px, 0, 0);
-	transform: translate3d(35px, 0, 0);
+  -webkit-transform: translate3d(35px, 0, 0);
+  transform: translate3d(35px, 0, 0);
+  transition: 0.5s;
 }
 
 .unitConverter {
@@ -101,7 +109,7 @@ input[type="checkbox"].switch:checked + .slider > .circle {
   padding-top: 10px;
 }
 
-.tempUnit{
+.tempUnit {
   font-size: 1.5em;
   margin: 0px;
   padding: 0 10px;
@@ -109,7 +117,8 @@ input[type="checkbox"].switch:checked + .slider > .circle {
 
 .Container {
   padding: 80px 100px;
-  color: whitesmoke;
+  color: rgb(255, 147, 147);
+  box-sizing: border-box;
 }
 
 .weatherTitle {
@@ -127,12 +136,11 @@ input[type="checkbox"].switch:checked + .slider > .circle {
 }
 
 .temp {
-  
   text-align: center;
   display: inline-block;
   vertical-align: baseline;
   width: 200px;
-  color: #fff;
+  color: rgb(42, 81, 255);
 }
 
 .temp h1 {
@@ -145,62 +153,62 @@ input[type="checkbox"].switch:checked + .slider > .circle {
   font-size: 1.5em;
 }
 
-.info-section{
+.info-section {
   display: flex;
   align-items: flex-start;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.leftBlock{
+.leftBlock {
   width: 60%;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: "Fira Sans", sans-serif;
   color: rgb(77, 69, 69);
 }
 
 .right-section {
   width: 40%;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: "Fira Sans", sans-serif;
   color: rgb(77, 69, 69);
   font-size: 0.9em;
 }
 
-.otherWeatherData h1{
+.otherWeatherData h1 {
   margin-bottom: 3px;
   padding: 0px;
 }
 
-.otherWeatherData h2{
+.otherWeatherData h2 {
   margin-bottom: 1px;
   padding: 0px;
-  margin-top: 0px ;
+  margin-top: 0px;
 }
 
-.windSpeed{
+.windSpeed {
   padding-left: 10px;
-  border-bottom: 2px solid #c4c0c0; 
+  border-bottom: 2px solid #c4c0c0;
   padding-right: 10px;
   margin-bottom: 10px;
   padding-bottom: 5px;
 }
 
-.windSpeed h1{
+.windSpeed h1 {
   display: inline-block;
 }
 
-.windSpeed img{
+.windSpeed img {
   padding-left: 20px;
   vertical-align: bottom;
 }
 
-.weatherInfoContainer{
+.weatherInfoContainer {
   display: flex;
   align-items: flex-start;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.right_block{
+.right_block {
   width: 50%;
   padding-right: 10px;
 }
@@ -209,7 +217,7 @@ input[type="checkbox"].switch:checked + .slider > .circle {
   padding-left: 10px;
 }
 
-.setRise{
+.setRise {
   display: flex;
   justify-content: space-between;
 }
